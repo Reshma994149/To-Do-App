@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+ body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #acf9ff, #d3a7ff);
+}
+
+ .container {
+  background: #ffffff;
+  width: 60vw;
+  height: 60vh;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+}
+
+ h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: black;
+}
+
+ .input-group {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+ input {
+  flex: 1;
+  padding: 10px 12px;      
+  font-size: 0.95rem;      
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+ .add-btn {
+  background: #4f46e5;
+  color: white;
+  padding: 10px 18px;      
+  font-size: 0.95rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background: #4338ca;
+}
+
+ .filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filters button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #e5e7eb;
+  color: black;
+  font-size: 1rem;
+}
+
+.filters .active {
+  background: #22c55e;
+  color: white;
+}
+
+ .todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 14px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+ .todo span {
+  font-size: 1.05rem;
+  color: black;
+}
+
+ .todo.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+ .todo-actions button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+ .todo-actions button:nth-child(1) {
+  background: #22c55e;
+  color: white;
+}
+
+ .todo-actions button:nth-child(2) {
+  background: #facc15;
+  color: black;
+}
+
+ .todo-actions button:nth-child(3) {
+  background: #ef4444;
+  color: white;
+}
+
+ .todo-actions button:hover {
+  opacity: 0.85;
+}
+
+ .no-task {
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
+  margin-top: 50px;
+}
